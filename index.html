@@ -9,18 +9,18 @@
   </head>
   <body>
     <div class="contentWrap">
-      <header>
+      <header class="header">
         <h1>波形デザインまとめ</h1>
       </header>
 
       <section class="waveSample">
         <h2>単色</h2>
-        <div class="about_area">
+        <div class="techArea">
           <div>
-            <h3>使用したライブラリ・ジェネレーター</h3>
+            <p class="title">使用したライブラリ・ジェネレーター</p>
             <ul>
               <li>
-                <span>SVGジェネレーター：</span>
+                <span>ジェネレーター：</span>
                 <a href="https://getwaves.io/" target="_bank" rel="noopener"
                   >https://getwaves.io/</a
                 >
@@ -28,7 +28,7 @@
             </ul>
           </div>
           <div class="caution">
-            <h3>注意すること</h3>
+            <p class="title">注意事項など</p>
             <ul>
               <li>特になし</li>
             </ul>
@@ -71,34 +71,12 @@
 
       <section class="waveSample">
         <h2>画像の上下単色</h2>
-        <div class="about_area">
+        <div class="techArea">
           <div>
-            <h3>使用したライブラリ・ジェネレーター</h3>
+            <p class="title">使用したライブラリ・ジェネレーター</p>
             <ul>
               <li>
-                <span></span>
-                <a href="" target="_bank" rel="noopener"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="caution">
-            <h3>注意すること</h3>
-            <ul>
-              <li>特になし</li>
-            </ul>
-          </div>
-        </div>
-        <div class="codepen_area"></div>
-      </section>
-
-      <section class="waveSample">
-        <h2>画像の上下単色 + 画像パララックス</h2>
-        <div class="about_area">
-          <div>
-            <h3>使用したライブラリ・ジェネレーター</h3>
-            <ul>
-              <li>
-                <span>波形ジェネレーター：</span>
+                <span>ジェネレーター：</span>
                 <a
                   href="https://www.shapedivider.app/"
                   target="_bank"
@@ -109,7 +87,73 @@
             </ul>
           </div>
           <div class="caution">
-            <h3>注意すること</h3>
+            <p class="title">注意事項など</p>
+            <ul>
+              <li>特になし</li>
+            </ul>
+          </div>
+        </div>
+        <div class="codepen_area">
+          <p
+            class="codepen"
+            data-height="600"
+            data-theme-id="dark"
+            data-default-tab="html,result"
+            data-user="iwahashi_a"
+            data-slug-hash="bGgmYBR"
+            style="
+              height: 600px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+            data-pen-title="wave_img"
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/iwahashi_a/pen/bGgmYBR"> wave_img</a>
+              by Iwahashi Aki (<a href="https://codepen.io/iwahashi_a"
+                >@iwahashi_a</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </div>
+      </section>
+      <section class="waveSample">
+        <h2>画像の上下単色 + 画像パララックス</h2>
+        <p>
+          現在、案件でよく使用している組み合わせ、Pug & SCSS &
+          TypeScript（脱jQuery）で書きました。<br />
+          パララックスのJSの数値のロジック部分はあくまでもテスト用です。<br />
+          スクロールイベントの発生数軽減は、requestAnimationFrameを使用。<br />
+          IE11はwindow.scrollYが非対応なので、window.pageYOffsetでフォローしておきました。
+        </p>
+        <div class="techArea">
+          <div>
+            <p class="title">使用したライブラリ・ジェネレーター</p>
+            <ul>
+              <li>
+                <span>ジェネレーター：</span>
+                <a
+                  href="https://www.shapedivider.app/"
+                  target="_bank"
+                  rel="noopener"
+                  >https://www.shapedivider.app/</a
+                >
+                <p>設定項目の豊富さとUIの綺麗さで選びました。</p>
+              </li>
+            </ul>
+          </div>
+          <div class="caution">
+            <p class="title">注意事項など</p>
             <ul>
               <li>特になし</li>
             </ul>
@@ -151,18 +195,20 @@
 
       <section class="waveSample">
         <h2>波形をアニメーション</h2>
-        <div class="about_area">
+        <div class="techArea">
           <div>
-            <h3>使用したライブラリ・ジェネレーター</h3>
+            <p class="title">使用したライブラリ・ジェネレーター</p>
             <ul>
               <li>
-                <span></span>
-                <a href="#" target="_bank" rel="noopener"></a>
+                <span>ジェネレーター：</span>
+                <a href="https://www.svgwaves.io/" target="_bank" rel="noopener"
+                  >https://www.svgwaves.io/</a
+                >
               </li>
             </ul>
           </div>
           <div class="caution">
-            <h3>注意すること</h3>
+            <p class="title">注意事項など</p>
             <ul>
               <li>特になし</li>
             </ul>
@@ -204,9 +250,9 @@
           ></script>
         </div>
         <hr />
-        <div class="about_area">
+        <div class="techArea">
           <div>
-            <h3>使用したライブラリ・ジェネレーター</h3>
+            <p class="title">使用したライブラリ・ジェネレーター</p>
             <ul>
               <li>
                 <span></span>
@@ -215,7 +261,7 @@
             </ul>
           </div>
           <div class="caution">
-            <h3>注意すること</h3>
+            <p class="title">注意事項など</p>
             <ul>
               <li>特になし</li>
             </ul>
@@ -256,20 +302,29 @@
           ></script>
         </div>
         <hr />
-        <div class="about_area">
+        <div class="techArea">
+          <p>
+            clip-pathでマスク →
+            マスク用のパスを左から右へアニメーション（繰り返し）
+          </p>
           <div>
-            <h3>使用したライブラリ・ジェネレーター</h3>
+            <p class="title">使用したライブラリ・ジェネレーター</p>
             <ul>
               <li>
-                <span></span>
-                <a href="#" target="_bank" rel="noopener"></a>
+                <span>ジェネレーター：</span>
+                <a href="https://www.svgwaves.io/" target="_bank" rel="noopener"
+                  >https://www.svgwaves.io/</a
+                >
               </li>
             </ul>
           </div>
           <div class="caution">
-            <h3>注意すること</h3>
+            <p class="title">注意事項など</p>
             <ul>
-              <li>特になし</li>
+              <li>IE11：clip-pathは対応しているがアニメーションは動かない</li>
+              <li>
+                Firefox：レンダリングエンジンの問題なのかアニメーションがカクつく
+              </li>
             </ul>
           </div>
         </div>
